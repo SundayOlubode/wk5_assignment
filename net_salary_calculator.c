@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 double deduct_tax_on_salary(double*);
-// double deduct_medication_insurance(int*);
+double *deduct_medication_insurance(double*);
 // double deduct_maternity_leave(int*);
 // double deduct_social_security(int*);
 
@@ -14,8 +14,9 @@ void main()
 	double * pns = &net_salary;
 
 	*pns = deduct_tax_on_salary(pgs);
+	pns = deduct_medication_insurance(pns);
 
-	printf("Net Salary is: %f\n", *pns);
+	printf("Net Salary is: %.2f\n", *pns);
 }
 
 double deduct_tax_on_salary(double *pgs)
@@ -37,6 +38,12 @@ double deduct_tax_on_salary(double *pgs)
 	return niat;
 }
 
-// double deduct_medication_insurance(int*);
+double *deduct_medication_insurance(double *pns)
+{
+	double insurance = 0.05;
+
+	*pns = *pns * (1 - insurance);
+	return pns;
+}
 // double deduct_maternity_leave(int*);
 // double deduct_social_security(int*);
