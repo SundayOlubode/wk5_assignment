@@ -5,7 +5,7 @@
 #define MAX_NAME_LENGTH 100
 
 void bubbleSort(char names[][MAX_NAME_LENGTH], int n, int ascending);
-
+void swap(char *p, char *q);
 
 /**
  * main - provides list and call bubble sort function
@@ -53,6 +53,14 @@ int main(void)
     return 0;
 }
 
+void swap(char *p, char *q)
+{
+    char temp[MAX_NAME_LENGTH];
+    strcpy(temp, p);
+    strcpy(p, q);
+    strcpy(q, temp);
+}
+
 /**
  * bubbleSort - sorts list of names by input order
  */
@@ -70,9 +78,7 @@ void bubbleSort(char names[][MAX_NAME_LENGTH], int n, int ascending)
                 (!ascending && strcmp(names[j], names[j + 1]) < 0))
             {
                 // Swap names[j] and names[j + 1]
-                strcpy(temp, names[j]);
-                strcpy(names[j], names[j + 1]);
-                strcpy(names[j + 1], temp);
+                swap(names[j], names[j + 1]);
                 swapped = 1;
             }
         }
