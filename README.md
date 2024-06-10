@@ -54,6 +54,6 @@ Understand nested loops while using arrays and strings.
 Leverage functions to write modular programs.
 
 ##Authors
-David Okonkuo
+David Okonkwo
 Samuel Olubode
 Magot Garang
