@@ -53,7 +53,7 @@ Understand pointers on variables, arrays, and strings.
 Understand nested loops while using arrays and strings.
 Leverage functions to write modular programs.
 
-##Authors
-*David Okonkwo
-*Samuel Olubode
-*Magot Garang
+**AUTHORS:**
+1. David Okonkwo - d.okonkwo@alustudent.com
+2. Samuel Olubode - s.olubode@alustudent.com
+3. Magot Garang - m.guut@alustudent.com
