@@ -56,6 +56,12 @@ void main()
 	printf("Net Salary: %.2f\n", *pns);
 }
 
+
+/**
+ * deduct_tax_on_salary - Deduct tax on Gross Salary
+ * @pgs: gross_salry pointer
+ * Return: double
+ */
 double deduct_tax_on_salary(double *pgs)
 {
 	double tax = 0;
@@ -75,6 +81,12 @@ double deduct_tax_on_salary(double *pgs)
 	return niat;
 }
 
+
+/**
+ * deduct_tax_on_salary - Deduct tax on Gross Salary
+ * @pgs: gross_salry pointer
+ * Return: double
+ */
 double *deduct_medication_insurance(double *pns)
 {
 	double insurance = (5 / 100.0);
@@ -83,6 +95,12 @@ double *deduct_medication_insurance(double *pns)
 	return pns;
 }
 
+
+/**
+ * deduct_maternity_leave - Deduct Maternity Leave on Gross Salary
+ * @pgs: gross_salry pointer
+ * Return: double
+ */
 double *deduct_maternity_leave(double *pns)
 {
 	double maternity_leave = (0.03 / 100.0);
@@ -91,6 +109,12 @@ double *deduct_maternity_leave(double *pns)
 	return pns;
 }
 
+
+/**
+ * deduct_social_security - Deduct Social Security on Gross Salary
+ * @pgs: gross_salry pointer
+ * Return: double
+ */
 double *deduct_social_security(double *pns)
 {
 	double social_security = (3 / 100.0);
