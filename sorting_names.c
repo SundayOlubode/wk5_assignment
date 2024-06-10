@@ -6,6 +6,12 @@
 
 void bubbleSort(char names[][MAX_NAME_LENGTH], int n, int ascending);
 
+
+/**
+ * main - provides list and call bubble sort function
+ *
+ * Return: 0 on success
+ */
 int main(void)
 {
     char names[NUM_NAMES][MAX_NAME_LENGTH] = {
@@ -47,6 +53,9 @@ int main(void)
     return 0;
 }
 
+/**
+ * bubbleSort - sorts list of names by input order
+ */
 void bubbleSort(char names[][MAX_NAME_LENGTH], int n, int ascending)
 {
     int swapped;
