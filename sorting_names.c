@@ -22,7 +22,6 @@ int main(void)
     printf("Enter 'asc' for ascending or 'desc' for descending order: ");
     scanf("%4s", order);
 
-    // Determine the sorting order
     if (strcmp(order, "asc") == 0)
     {
         ascending = 1;
@@ -37,10 +36,8 @@ int main(void)
         return 1;
     }
 
-    // Sort the names using bubble sort
     bubbleSort(names, NUM_NAMES, ascending);
 
-    // Print the sorted list of names
     printf("Sorted names:\n");
     for (int i = 0; i < NUM_NAMES; i++)
     {
