@@ -43,9 +43,9 @@ Net salary: $791.70
 Enter 'asc' for ascending order or 'desc' for descending order: asc
 
 - Sample Output:
-Sam
-David
-Andrew
+1.Sam
+2.David
+3.Andrew
 
 ##Assessment Goals
 Understand the stack and the heap.
@@ -54,6 +54,6 @@ Understand nested loops while using arrays and strings.
 Leverage functions to write modular programs.
 
 ##Authors
-David Okonkwo
-Samuel Olubode
-Magot Garang
+*David Okonkwo
+*Samuel Olubode
+*Magot Garang
