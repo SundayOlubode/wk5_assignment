@@ -43,9 +43,9 @@ Net salary: $791.70
 Enter 'asc' for ascending order or 'desc' for descending order: asc
 
 - Sample Output:
-1.Sam
-2.David
-3.Andrew
+1. Aline Fletcher
+2. David Doe
+3. Sam Bankman
 
 ##Assessment Goals
 Understand the stack and the heap.
